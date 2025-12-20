@@ -14,11 +14,11 @@ ul {
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
+    gap: 20px;
 }
 
 a {
     text-decoration: none;
-    padding: 5px;
 }
 
 .hero,
@@ -90,6 +90,7 @@ button {
     margin: 8px;
     width: 125px;
     align-self: flex-start;
+    border-radius: 12px;
 }
 
 .secondary {
@@ -106,4 +107,66 @@ button {
 
 .info-header {
     align-self: center;
+    padding: 8px;
+}
+
+.card-stack {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 12px;
+    flex: 1;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    height: 400px;
+    width: 400px;
+    
+}
+
+.img-container {
+    height: 200px;
+    width: 175px;
+    overflow: hidden;
+    border: 3px solid #3882F6;
+    border-radius: 12px;
+    display: flex;
+    align-self: center;
+}
+
+.img-container img {
+    width: 100%;
+    object-fit: contain;
+    align-self: center;
+}
+
+.empty-div {
+    width: 250px;
+}
+
+#img-one {
+    width: 200px;
+    height: 400px;
+    object-position: 25px center;
+}
+
+#img-two {
+    height: 100%;
+    object-position: center;    
+}
+
+#img-three {
+    height: auto;
+    max-width: 100%;
+    object-position: center;
+}
+
+#img-four {
+    max-height: 100%;
+    object-position: 25px center;
 }
