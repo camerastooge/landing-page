@@ -46,6 +46,47 @@ a,
     color: #E5E7EB;
 }
 
+.info-text,
+.quote {
+    color: #1F2937;
+}
+
+.quote {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    text-align: start;
+}
+
+.attribution {
+    color: #1F2937;
+    align-self: flex-end;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: end;
+}
+
+.info-text {
+    font-size: 18px;
+    align-self: center;
+}
+
+.quote-space {
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.text-box {
+    padding: 150px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 24px;
+}
+
 .logo {
     font-size: 24px;
     font-weight: bold;
@@ -55,28 +96,29 @@ a,
 .main {
     font-size: 48px;
     font-weight: 900;
-    margin: 8px;
 }
 
 .hero {
     display: flex;
-    padding: 8px;
+    justify-content: space-around;
+    padding: 100px;
 }
 
 .hero .left {
     display: flex;
     flex-direction: column;
-    padding: 15px;
+    align-self: flex-start;
 }
 
 .right {
     width: 1000px;
     display: flex;
     justify-content: center;
+    align-self: flex-start;
 }
 
 .right img {
-    height: 250px;
+    height: 300px;
     width: auto;
     align-self: center;
 }
@@ -90,7 +132,7 @@ button {
     margin: 8px;
     width: 125px;
     align-self: flex-start;
-    border-radius: 12px;
+    border-radius: 8px;
 }
 
 .secondary {
@@ -103,6 +145,7 @@ button {
     color: #1F2937;
     display: flex;
     flex-direction: column;
+    gap: 16px;
 }
 
 .info-header {
@@ -115,23 +158,25 @@ button {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    gap: 12px;
-    flex: 1;
+    gap: 48px;
+    flex: 0 1 auto;
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    flex: 1;
-    justify-content: space-between;
+    flex: 0 0 200px;
+    justify-content: flex-start;
+    text-align: center;
     height: 400px;
     width: 400px;
+    gap: 8px;
     
 }
 
 .img-container {
     height: 200px;
-    width: 175px;
+    width: 200px;
     overflow: hidden;
     border: 3px solid #3882F6;
     border-radius: 12px;
@@ -147,12 +192,13 @@ button {
 
 .empty-div {
     width: 250px;
+    flex: 0 1 auto;
 }
 
 #img-one {
     width: 200px;
     height: 400px;
-    object-position: 25px center;
+    object-position: center 65px;
 }
 
 #img-two {
@@ -161,12 +207,45 @@ button {
 }
 
 #img-three {
-    height: auto;
-    max-width: 100%;
-    object-position: center;
+    height: 230px;
+    width: 275px;
+    object-position: -40px center;
 }
 
 #img-four {
     max-height: 100%;
-    object-position: 25px center;
+    object-position: center;
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+}
+
+.cta-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: last baseline;
+    background-color: #3882F6;
+    padding: 24px 48px;
+    margin: 48px;
+    flex: 0 1 1000px;
+}
+
+.vstack {
+    display: flex;
+    flex-direction: column;
+}
+
+.cta-header {
+    color: #E5E7EB;
+    font-size: 24px;
+    font-weight: bolder;
+    align-self: flex-start;
+    margin-left: 8px;
+}
+
+.cta-button {
+    border: 2px solid white;
 }
