@@ -94,6 +94,7 @@ a,
     flex-direction: column;
     align-self: center;
     gap: 24px;
+    flex: 1 1 1400px;
 }
 
 .logo {
@@ -201,7 +202,7 @@ button {
 
 .empty-div {
     width: 250px;
-    flex: 0 1 auto;
+    flex: 1 1 200px;
 }
 
 #img-one {
